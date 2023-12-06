@@ -1,7 +1,3 @@
-
-
-
-
 import pyttsx3 ; import datetime ; import speech_recognition as sr ; from scapy.all import sniff
 
 import wikipedia as wiki ; import smtplib
