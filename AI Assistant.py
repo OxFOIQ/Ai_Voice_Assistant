@@ -159,7 +159,6 @@ if __name__ == '__main__':
             except Exception as e :
                 print(e)
                 speak("there is something wrong , please try again")
-############################################################################################
         elif "save this" in query :
             speak("what should i save !")
             data = command_orders()
@@ -167,7 +166,6 @@ if __name__ == '__main__':
             remember = open("data.txt","w")
             remember.write(data)
             remember.close()
-############################################################################################
         elif "log out" in query :
             os.system("shutdown /l")
         elif "shutdown" in query :
@@ -176,16 +174,15 @@ if __name__ == '__main__':
             os.system(" shutdown /r")
         elif "offline" in query :
             quit()
-############################################################################################
         elif "screenshot" in query :
             screenshot()
             speak("Done ")
-############################################################################################
+
         elif "cpu" in query :
             cpu()
         elif "battery " in query :
             battery()
-############################################################################################
+
         elif "joke" in query:
             try:
                 jokes=pyjokes.get_joke()
@@ -193,7 +190,7 @@ if __name__ == '__main__':
                 speak(jokes)
             except Exception as e:
                 print(f"An error occurred: {str(e)}")
-############################################################################################
+
         elif "sniffing network" in query :
             interface="Wi-Fi"
             speak("how many packets!")
